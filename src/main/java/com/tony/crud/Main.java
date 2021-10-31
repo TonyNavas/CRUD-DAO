@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import modelo.Conexion;
 
 public class Main extends Application{
     @Override
@@ -37,5 +38,10 @@ public class Main extends Application{
         primaryStage.setScene(scene);
         primaryStage.show();
 
+        Conexion con = new Conexion();
+
+    }
+    public static void main(String[] args){
+        launch(args);
     }
 }
